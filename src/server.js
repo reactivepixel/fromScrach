@@ -8,6 +8,6 @@ app.get('/dashboard', (req, res, next) => {
 });
 
 app.listen(port, () => {
-    console.log('Server is alive.');
+    console.log('Server is alive.', port);
     
 });
