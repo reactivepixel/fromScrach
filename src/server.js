@@ -3,9 +3,11 @@ const app = express();
 
 const port = 3000;
 
-
 app.get('/dashboard', (req, res, next) => {
     res.send("<h1>I'm Alive!</h1>")
 });
 
-app.listen(port);
+app.listen(port, () => {
+    console.log('Server is alive.');
+    
+});
